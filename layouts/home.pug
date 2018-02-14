@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	#LeftMainContentPanel
+	
+		#WheelInterface
+			form(id="WheelInterfaceForm")
+				input.slider(id="SubDivisions"    type="range" min="1" max="100" value="50")
+				input.slider(id="SlideshowRadius" type="range" min="1" max="100" value="50")
+	
+	#RightMainContentPanel
+	
+		canvas(id="SlideShowWheelCanvas" onMouseMove="GetMousePosition(event)") Your browser does not support the HTML5 canvas tag.

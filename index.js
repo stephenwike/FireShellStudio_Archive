@@ -1,15 +1,25 @@
 var express = require('express');
-var app = express();
 var path = require ('path');
+
+var app = express();
 var app_port = 8019;
-//var router = express.Router();
+
+app.set('views', path.join(__dirname, 'layouts'));
+app.set('view engine', 'pug');
+
+// Middleware
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, "layouts", "home.html"));
+  res.render('home');
 });
 
-app.get('/projects', (req, res) => {
-  res.sendFile(path.join(__dirname, "layouts", "projects.html"));
+app.get('/Projects', (req, res) => {
+  res.render('projects');
+});
+
+app.get('/About', (req, res) => {
+  res.render('about');
 });
 
 app.listen(app_port, () => {

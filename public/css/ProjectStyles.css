@@ -1,0 +1,9 @@
+#projectDiv
+{
+	padding: 25px;
+	margin: 0 8px;
+	border: 10px solid black;
+	border-width: 0 10px;
+	background-color: rgba(0,0,0,0.75);
+	color: lightblue;
+}

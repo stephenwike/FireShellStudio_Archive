@@ -1,15 +1,17 @@
-#Footer
+footer
 {
-	position:absolute;
-	bottom:0;
-	left:0;
-	right:0;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	height:45px;
 	background-color:#000;
 	color:#FF0;
 }
 
-#Footer p
+footer p
 {
 	font-size:small;
 }

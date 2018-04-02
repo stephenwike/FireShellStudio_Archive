@@ -24,14 +24,25 @@ body {
 
 #MaintenanceBanner
 {
-	position:absolute;
+	position:fixed;
 	top:75px;
 	left:20%;
 	right:20%;
 	z-index:2;
-	background-color:rgba(225,0,0,0.8);
+	background-color:rgba(50,0,0,0.95);
 	border: 6px solid #000;
 	color:#FFF;
+}
+
+#MaintenanceBanner h1
+{
+	font-size: 27px;
+}
+
+#MaintenanceBanner p
+{
+	font-size: 16px;
+	color:#DDE;
 }
 
 #RightMainContentPanel

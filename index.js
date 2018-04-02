@@ -1,11 +1,13 @@
 // Build Server
 var express = require('express');
 var path = require ('path');
+var hbs = require('express-handlebars');
 var app = express();
 var app_port = 8019;
 
-app.set('views', path.join(__dirname, 'layouts'));
-app.set('view engine', 'pug');
+app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
 
 // Middleware
 app.use(express.static(path.join(__dirname, 'public')));

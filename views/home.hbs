@@ -1,0 +1,48 @@
+<div id="LeftMainContentPanel">
+
+	<div id="WebsiteHomeSummary">
+	
+	</div>
+
+	<div id="WheelInterface">
+		<form id="WheelInterfaceForm">
+			<input class="slider" id="SubDivisions"    type="range" min="1" max="100" value="50">
+			<input class="slider" id="SlideshowRadius" type="range" min="1" max="100" value="50">
+		</form>
+	</div>
+</div>
+
+<div id="RightMainContentPanel">
+		
+	<canvas id="slideshow-wheel-widget-container" width="800" 
+		height="800" onMouseMove="GetWheelSlideshowMousePosition(event)" 
+		value='
+		{
+		"CenterX": 400,	
+		"CenterY": 400, 
+		"WheelRadius": 400, 
+		"WheelEndTheta": 1.57, 
+		"IsRounded": true, 
+		"GridMode": false, 
+		"SubDivisions": 10, 
+		"CenterPaddingRadius": 300, 
+		"HasLabels": true
+		}'> Your browser does not support the HTML5 canvas tag.
+	</canvas>
+	<div id="slideshow-wheel-widget-collection" hidden>
+		<img alt="Animation" src="img/slide_animation_01.png"></img>
+		<img alt="Illustration" src="img/slide_illustration_01.png"></img>
+		<img alt="Video" src="img/slide_video_01.png"></img>
+		<img alt="Logo" src="img/slide_logo_01.png"></img>
+		<img alt="Concept" src="img/slide_concept_01.png"></img>
+		<img alt="Animation" src="img/slide_animation_02.png"></img>
+		<img alt="Illustration" src="img/slide_illustration_02.png"></img>
+		<img alt="Video" src="img/slide_video_02.png"></img>
+		<img alt="Animation" src="img/slide_animation_03.png"></img>
+	</div>
+	<button onclick="button_click()">Click Me!</button>
+</div>
+
+<script type='text/javascript' src='js/LayoutEditor.js'></script>
+<script type='text/javascript' src='/widgets/WheelSlideshow/WheelSlideshow.js'></script>
+<script type="text/javascript" src="js/Commands.js"></script>

@@ -42,11 +42,10 @@ function LayoutResize()
 	var MainContent = GetMainContent();
 	var RightMainContentPanel = GetRightMainContentPanel();
 	var LeftMainContentPanel = GetLeftMainContentPanel();
-	
 	// Get Main Content and Window Height
 	MainContentHeight = MainContent.clientHeight;
 	WindowWidth = window.innerWidth;
-		
+	
 	// Determine Panel Dimensions
 	var AcceptedWidth = WindowWidth - RightPanelMinWidth;
 	if(AcceptedWidth >= MainContentHeight)
@@ -55,6 +54,7 @@ function LayoutResize()
 		RightPanelWidth = MainContentHeight;
 		LeftPanelWidth = WindowWidth - MainContentHeight;
 		LeftPanelTop = 0;
+		loadFullScreen();
 	}
 	else
 	{
@@ -86,5 +86,5 @@ function DropMenu() {
 /*----------------------------
 * EVENTS
 *---------------------------*/
-window.onload = LayoutResize();
-window.onresize = LayoutResize();
+window.onload = function(event) { LayoutResize() };
+window.onresize = function(event) { LayoutResize() };

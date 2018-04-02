@@ -1,0 +1,83 @@
+body {
+    background-image: url("/img/clockwork.gif");
+    background-repeat: repeat;
+}
+
+#MainContent
+{
+	position:absolute;
+	left:0;
+	right:0;
+	top:45px;;
+	bottom:45px;
+}
+
+#MainContentPanel
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(255,0,0,0.8);
+}
+
+#MaintenanceBanner
+{
+	position:absolute;
+	top:75px;
+	left:20%;
+	right:20%;
+	z-index:2;
+	background-color:rgba(225,0,0,0.8);
+	border: 6px solid #000;
+	color:#FFF;
+}
+
+#RightMainContentPanel
+{
+	position:absolute;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:rgba(0,0,0,0.8);
+}
+
+#LeftMainContentPanel
+{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	background-color:rgba(115,115,115,0.8);
+}
+
+#WebsiteHomeSummary
+{
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0,0,0,0.8);
+}
+
+#WheelInterfaceForm
+{
+	position:absolute;
+	bottom:0;
+	margin:25px;
+	Padding:25px;
+	background-color:#333;
+}
+
+#SlideShowWheelCanvas
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,1);
+}
+

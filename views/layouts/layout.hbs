@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>FireShell Studio</title>
+		<link rel='stylesheet' href='/css/HeaderStyles.css'>
+		<link rel='stylesheet' href='/css/HomeStyles.css'>
+		<link rel='stylesheet' href='/css/ProjectsStyles.css'>
+		<link rel='stylesheet' href='/css/Footer.css'>
+		<link rel='stylesheet' href='/css/FireShellClasses.css'>
+		
+	</head>
+	<body>
+		<script type='text/javascript' src='/widgets/CustomAlert/myAlerts.js'></script>
+		<div id="MaintenanceBanner">
+			<center>
+				<h1>Website Under Maintenance</h1>
+				<h2>Explore the experimental elements found here at FireShell Studio!</h2>
+			</center>
+		</div>
+		<div id="NavigationBar" class="NavBar">
+			<a class="active" href="/">  Home  </a>
+			<a href="/Projects">Projects</a>
+			<a href="/Contact"> Contact</a>
+			<a href="/About">  About </a>
+			<a class="navIcon" href="javascript:void(0);" onclick="DropMenu()"> &#9776; </a>
+		</div>	
+		<div id="MainContent">
+			{{{ body }}}
+		</div>
+		<footer>
+			<p>Copyright &copy; 2018</p>
+		</footer>
+	</body>
+</html>

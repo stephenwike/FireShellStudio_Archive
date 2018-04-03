@@ -16,8 +16,13 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 
+
 app.get('/Projects', (req, res) => {
   res.render('projects');
+});
+
+app.get('/Projects/:page', (req, res) => {
+	res.render('projects/' + req.params.page);
 });
 
 app.get('/About', (req, res) => {

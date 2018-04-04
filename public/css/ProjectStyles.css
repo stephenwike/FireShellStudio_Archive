@@ -1,9 +1,67 @@
+figure
+{
+	margin: 0;
+}
+
 #projectDiv
 {
 	padding: 25px;
-	margin: 0 8px;
+	margin: 15px;
 	border: 10px solid black;
 	border-width: 0 10px;
-	background-color: rgba(0,0,0,0.75);
+	background-color: rgba(0,0,0,0.5);
 	color: lightblue;
+}
+
+#projectContainer
+{
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+	border: 10px solid black;
+}
+
+.ProjectHeader
+{
+	display: block;
+	background-color: rgba(255,0,0,0.05);
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.ProjectHeader h1
+{
+	margin: 0;
+	padding: 21px;
+}
+
+.ProjectBlock
+{
+	display: inline-block;
+	width: 100%;
+	background-color: rgba(255,0,0,0.05);
+	margin: 5px 0;
+}
+
+.ProjectBlock p
+{
+	margin: 45px;
+}
+
+.ProjectReferences
+{
+	background-color: rgba(225,225,225,0.12);
+}
+
+.med_img_float_right
+{
+	width: 200px;
+	float: right;
+	margin: 25px;
+	text-align: center;
+}
+
+.med_img_line
+{
+	width: 200px;
+	margin: 0 5px;
 }

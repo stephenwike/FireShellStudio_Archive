@@ -1,6 +1,9 @@
 body {
+	
     background-image: url("/img/clockwork.gif");
     background-repeat: repeat;
+	padding: 0px;
+	margin: 15px;
 }
 
 #MainContent

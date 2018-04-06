@@ -5,10 +5,10 @@ figure
 
 #projectDiv
 {
-	padding: 25px;
+	padding: 15px;
 	margin: 15px;
 	border: 10px solid black;
-	border-width: 0 10px;
+	border-width: 0 10px 10px 10px;
 	background-color: rgba(0,0,0,0.5);
 	color: lightblue;
 }
@@ -20,48 +20,125 @@ figure
 	border: 10px solid black;
 }
 
-.ProjectHeader
-{
-	display: block;
-	background-color: rgba(255,0,0,0.05);
-	text-align: center;
-	margin-bottom: 5px;
-}
-
-.ProjectHeader h1
-{
-	margin: 0;
-	padding: 21px;
-}
-
 .ProjectBlock
 {
 	display: inline-block;
 	width: 100%;
-	background-color: rgba(255,0,0,0.05);
-	margin: 5px 0;
+	margin-bottom: 5px;
 }
 
 .ProjectBlock p
 {
-	margin: 45px;
+}
+
+.ProjectBlock h1
+{
+	margin: 0;
+}
+
+.ProjectBlock h2
+{
+	margin: 0;
+	padding 0 0 12px 0;
+}
+
+.ProjectHeader
+{
+	margin: 35px 35px 0 35px;
+	display: block;
+	background-color: rgba(255,0,200,0.05);
+	text-align: center;
+	padding: 18px;
+	border: 10px solid black;
+}
+
+.ProjectContent
+{
+	margin: 5px 35px 0 35px;
+	display: block;
+	background-color: rgba(255,0,200,0.05);
+	padding: 10px 45px;
+}
+
+.ProjectHighlight
+{
+	margin: 5px 35px 0 35px;
+	display: block;
+	background-color: rgba(100,150,200,0.12);
+	padding: 25px;
+}
+
+.ProjectFloater
+{
+	display: inline-block;
 }
 
 .ProjectReferences
 {
-	background-color: rgba(225,225,225,0.12);
+	margin: 5px 35px 35px 35px;
+	display: block;
+	background-color: rgba(225,225,225,0.2);
+	padding: 45px;
 }
 
 .med_img_float_right
 {
-	width: 200px;
+	height: 200px;
 	float: right;
 	margin: 25px;
-	text-align: center;
+	text-align: right;
+}
+
+.lrg_img_line
+{
+	height: 280px;
+	margin: 0 5px;
 }
 
 .med_img_line
 {
-	width: 200px;
+	height: 200px;
 	margin: 0 5px;
+}
+
+.small_img_line
+{
+	height: 150px;
+	margin: 0 5px;
+}
+
+.spread
+{
+	height: auto;
+	width: 100%;
+}
+
+.center_figure
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fig_float_right
+{
+	display: block;
+	float: right;
+	text-align: right;
+}
+
+@media only screen and (max-width: 800px) {
+    .lrg_img_line
+	{
+		height: auto;
+		width: 70%;
+		margin: 0 5px;
+	}
+
+	.med_img_line
+	{
+		height: auto;
+		width: 50%;
+		margin: 0 5px;
+	}
 }

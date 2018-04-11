@@ -1,0 +1,45 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	
+	padding: 0px;
+	margin: 0px;	  
+}
+
+body {
+    background-image: url("/img/clockwork.gif");
+    background-repeat: repeat;
+	padding: 0px;
+	margin: 10px;
+}
+
+#MainContent
+{
+	display: inline-block;
+	width: 100%;
+	background-color:rgba(255,0,0,0.3);
+}
+
+#MaintenanceBanner
+{
+	position:fixed;
+	top:75px;
+	left:20%;
+	right:20%;
+	z-index:2;
+	background-color:rgba(50,0,0,0.95);
+	border: 6px solid #000;
+	color:#FFF;
+}
+
+#MaintenanceBanner h1
+{
+	font-size: 27px;
+}
+
+#MaintenanceBanner p
+{
+	font-size: 16px;
+	color:#DDE;
+}
